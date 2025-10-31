@@ -1,2 +1,2 @@
-# cubodemagma-dev.github.io
+# por CuboDeMagma_OFF
 Un desarrollador con muchas ideas pero pocas publicadas realmente...
