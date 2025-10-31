@@ -1,2 +1,2 @@
-# por CuboDeMagma_OFF
+# Por CuboDeMagma_OFF
 Un desarrollador con muchas ideas pero pocas publicadas realmente...
