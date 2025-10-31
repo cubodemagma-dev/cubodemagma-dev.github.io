@@ -3,47 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Web oficial MOP-DEV STUDIOS </title>
+  <title>Web oficial MOP-DEV STUDIOS</title>
   <style>
-    body {
-      background-color: #1e1e2e;
-      color: #f1f1f1;
-      font-family: sans-serif;
-      text-align: center;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      padding: 2em;
+      padding: 0;
     }
 
-    .contenedor {
-      border: 2px solid #f1f1f1;
-      border-radius: 12px;
-      padding: 2em;
-      max-width: 600px;
-      margin: 2em auto;
-      background: rgba(255, 255, 255, 0.05);
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: "JetBrains Mono", monospace;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    a.boton {
-      display: inline-block;
-      padding: 0.75em 1,5em;
-      background: #3b82f6;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      margin-top: 1em;
+    header {
+      display: flex;
+      aling-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #fff;
+      padding: 0.5em 1em;
+      background-color: #000;
+    }
+
+    .titulo {
+      font-size: 1.2em;
+      letter-spacing: 1px;
+    }
+
+    .cbotoner {
+      display: flex;
+      gap: 0.5em;
+    }
+
+    .cbotoner button {
+      width: 40px;
+      height: 40px;
+      background: #000;
+      color: #fff;
+      border: 2px solid #fff;
+      font-size: 1em;
+      cursor: pointer;
       transition: 0.2s;
     }
 
-    a.boton:hover {
-      background: #2563eb;
+    .cbotoner button.activo {
+      bacground: #fff;
+      color: #000;
     }
-  </style>
+
+    .cbotoner button:hover {
+      background: #222;
+    }
+
+    .contenedor {
+      flex: 1;
+      border: 2px solid #fff;
+      border-top: none;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .texto {
+      max-width: 600px;
+      text-align: center;
+      line-height: 1.5em;
+      white-space: pre-wrap;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+      margin-top: 1em;
+    }
+
+    .galeria img {
+      border: 2px solid #fff;
+      width: 180px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .galeria img:hover {
+      filter: brightness(0.7);
+    }
+    </style>
 </head>
 <body>
+  <header>
+    <div class="titulo">CuboDeMagma_OFF</div>
+    <div class="cbotoner">
+      <button class="activo">1</button>
+      <button>2</button>
+      <button>3</button>
+    </div>
+  </header>
+
   <div class="contenedor">
-    <h1>Bienvenido seas humano</h1>
-    <p>Has accedido a mi sitio web oficial desarrollado por mi...</p>
-    <a href="https://cubodemagma-off.itch.io/" class="boton">Visita mi sitio en itch.io</a>
+    <div class="texto">
+      <p>Panel de prueba en desarrollo...</p>
+      <p>Panel de imagenes aun en desarrollo...</p>
+
+      <div class="galeria">
+      </div>
+    </div>
   </div>
 </body>
 </html>
