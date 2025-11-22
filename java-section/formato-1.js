@@ -5,5 +5,8 @@ function abrirSeccion(nombreSeccion) {
     todasLasSecciones[i].classList.remove("activo");
   }
 
-  document.getElementById(nombreSeccion).classList.add("activo");
+  var seccionAMostrar = document.getElementById(nombreSeccion);
+  if (seccionAMostrar) {
+    SeccionAMostrar.classList.add("activo");
+  }
 }
