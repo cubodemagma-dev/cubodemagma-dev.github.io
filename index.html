@@ -6,15 +6,51 @@
     <title>MOP studios developer</title>
   </head>
   <body>
-    <h1>
-      Sitio creado por mi para la comunidad presente
-    </h1>
-    <p>
-      Creo que este es un buen sitio donde puedo experimentar con mi sitio web, no lo crees?
-      Si, muy seguramente no sabras ni que estás leyendo pero dejame ser claro...
-      Esta web ha sido creada por mi desde cero con un aprendizaje de html en varias horas tras
-      haber hecho multiples intentos de crear una web profecional por mi cuenta...
-      y aun asi me hace falta aprender mucho de esto, pero creo que voy mejorando...
-    </p>
+    <nav>
+      <button onclick="abrirSeccion('inicio')">Inicio</button>
+      <button onclick="abrirSeccion('juegos')">Dev Games</button>
+    </nav>
+
+    <hr>
+
+    <div id="inicio" class="seccion activa">
+      <h1>
+        Seas bienvenido/a a el sitio web creado completamente 
+        para aquellos que ven los procesos de desarrollo que 
+        solemos llevar a cabo
+      </h1>
+      <p>
+        Pero antes de comenzar, unas palabras del desarrollador:
+        -Hey, hola, seguramente te han enviado este sitio web, 
+        si, no imaginé que conseguiría hacer esta parte real, pero 
+        hey, aquí estoy, solo disfruta del contenido, me ha tomado 
+        meses en acabar mucho del contenido que veras a continuación...
+      </p>
+    </div>
+
+    <div>
+      <h1>
+        Si, aqui hay codigo, creo que hueles el café que me he 
+        tenido que tomar para pasar hasta las 3:52 de la mañana 
+        haciendo esto.
+      </h1>
+      <p>
+      Creo que se puede oler un aroma a café en el aire, no 
+      lo sientes?, si, es relajante cuando estás solo sin ruido 
+      y haciendo algo de lo que más te gusta, en mi caso, esto 
+      de aquí...
+      </p>
+      <pre class="caja-codigo">
+        <code>
+          def() abra_cadabra():
+            print("Ejecutandose")
+
+          abra_cadabra()
+        </code>
+      </pre>
+    </div>
+
+    <script src="java-section/formato-1.js"></script>
+    
   </body>
 </html>
