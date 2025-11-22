@@ -1,3 +1,31 @@
+.seccion {
+  display: none;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.seccion.activo {
+  display: block;
+}
+
+nav button {
+  background-color: #333;
+  color: #0f0;
+  border: 1px solid #0f0;
+  padding: 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.caja-codigo {
+  background-color: #111;
+  border: 1px solid #444;
+  padding: 15px;
+  color: #0f0;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #000;
