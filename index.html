@@ -41,10 +41,14 @@
       </p>
       <pre class="caja-codigo">
         <code>
-          def abra_cadabra():
-            print("Ejecutandose")
+          extends Node
+          var palabra : String = "Hola DEV-(tu nombre)"
 
-          abra_cadabra()
+          func _ready():
+            ejecuta_esta_funcion()
+
+          func ejecuta_esta_funcion():
+            print("Este codigo se ejecuta para ", palabra * 3)
         </code>
       </pre>
     </div>
