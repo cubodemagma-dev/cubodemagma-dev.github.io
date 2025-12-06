@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Delegación simple: escucha clicks en nav y cambia secciones
+  // Delegación: escucha clicks en botones con data-target
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('button[data-target]');
     if (!btn) return;
@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (seccionAMostrar) {
       seccionAMostrar.classList.add("activo");
       seccionAMostrar.setAttribute('aria-hidden', 'false');
-      // opcional: actualizar hash para navegación/recarga
+      // actualizar hash para navegación/recarga
       history.replaceState(null, '', '#' + nombreSeccion);
     }
   }
 
-  // Abrir sección por hash al cargar
-  const initial = location.hash ? location.hash.replace('#', '') : null;
-  if (initial) abrirSeccion(initial);
+  // Abrir sección por hash al cargar (fallback a 'inicio')
+  const initial = location.hash ? location.hash.replace('#', '') : 'inicio';
+  abrirSeccion(initial);
 });
