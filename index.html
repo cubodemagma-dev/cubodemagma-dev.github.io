@@ -1,88 +1,65 @@
-<html>
+<!doctype html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="effects/crt.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>MOP studios developer</title>
+    <link rel="stylesheet" href="effects/crt.css">
   </head>
   <body>
-    <nav>
-      <button onclick="abrirSeccion('inicio')">Inicio</button>
-      <button onclick="abrirSeccion('juegos')">Dev Games</button>
-      <button onclick="abrirSeccion('blog')">Blog</button>
-    </nav>
+    <header class="site-header">
+      <div class="brand">MOP studios</div>
+      <nav class="main-nav" role="navigation" aria-label="Principal">
+        <button class="nav-btn" data-target="inicio">Inicio</button>
+        <button class="nav-btn" data-target="Everlight">Everlight</button>
+        <button class="nav-btn" data-target="juegos">Dev Games</button>
+        <button class="nav-btn" data-target="blog">Blog</button>
+      </nav>
+    </header>
 
-    <hr>
+    <main>
+      <section id="inicio" class="seccion activo" aria-hidden="false">
+        <h1>Seas bienvenido/a</h1>
+        <p>Bienvenido a casa compañero. Este espacio es una forma de expresión para quienes gustan de explorar algo nuevo.</p>
+      </section>
 
-    <div id="inicio" class="seccion activo">
-      <h1>
-        Seas bienvenido/a
-      </h1>
-      <p>
-        Bienvenido a casa compañero, has llegado al sitio y trabajo 
-        de una mente que ha comenzado a desarrollar desde hace mucho 
-        tiempo, aunque realmente ni te habrás dado cuenta de ello, 
-        y solo por ello, este espacio es traido como una forma de expresión 
-        para todos aquellos que gusten de explorar algo nuevo.
-      </p>
-    </div>
+      <!-- Sección Everlight: etiqueta personalizada <Everlight> como pediste -->
+      <Everlight id="Everlight" class="seccion" aria-hidden="true">
+        <h1>Everlight</h1>
 
-    <div id="juegos" class="seccion">
-      <h1>
-        Hueles eso?, es el olor al café con una laptop
-      </h1>
-      <p>
-      Sabes, algunas de las cosas que más disfruto, es el hecho de 
-      disfrutar de ver mi pantalla con texto que puede ejecutarse 
-      en tiempo real como un juego o una aplicación que pueda ser 
-      vista, apreciada o usada por alguien que busque de ello, y, 
-      además de ello, el café suele ser la bebida que más me gusta 
-      recordar al momento de una buena noche de desarrollo de algo.
-      </p>
-      <pre class="caja-codigo">
-        <code>
-          extends Node
-          var palabra : String = "Hola DEV-(tu nombre)"
+        <!-- Aquí colocas el texto descriptivo de Everlight -->
+        <p class="everlight-text">
+          Coloca aquí la descripción, notas, o cualquier texto relacionado con Everlight.
+          Puedes editar este párrafo directamente en index.html.
+        </p>
 
-          func _ready():
-            ejecuta_esta_funcion()
+        <!-- Botón de ejemplo para dirigir a itch.io:
+             Reemplaza el valor de href con tu enlace real (formato de ejemplo abajo). -->
+        <p>
+          <!-- Ejemplo de formato de enlace: https://tuusuario.itch.io/tu-juego -->
+          <a id="everlight-visit" class="btn-itch" href="https://example.itch.io/tu-enlace-aqui" target="_blank" rel="noopener">
+            Visitar Everlight (reemplaza el enlace)
+          </a>
+        </p>
+      </Everlight>
 
-          func ejecuta_esta_funcion():
-            print("Este codigo se ejecuta para ", palabra * 3)
-        </code>
-      </pre>
-    </div>
+      <section id="juegos" class="seccion" aria-hidden="true">
+        <h1>Hueles eso? Es café con laptop</h1>
+        <p>Disfruto ver texto que se vuelve juego o app. Aquí algunos proyectos.</p>
+      </section>
 
-    <div id="blog" class="seccion">
-      <h1>
-        El arte de un sitio como este (Blog personal)
-      </h1>
-      <p>
-        Es más facil explicar la forma en la que trabaja un desarrollador 
-        que explicar como funciona el arte creativo de alguien que hace 
-        lo mismo, No hay mucho que te vaya a destacar, el arte es algo que 
-        más que entender debes apreciar, alguna vez un juego te ha cautivado 
-        por su música?, su jugabilidad?, si arte visual?, no sé, a mi me ha 
-        cautivado los escenarios de un juego, a quien no le gusta ver una 
-        historia que ha sido contada por el color o por la forma de acomodo 
-        de un objeto, si, ese soy yo, el artista del fondo que muchos ven pero 
-        aun cuesta comprender como funcionan...
-      </p>
-      <p>
-        INterpretalo como quieras, sinceramente lo que me ineresa no es acutivar 
-        es enseñar como algo tan simple como lo es una gota de agua cayendo de una 
-        hoja o el sonar de la lluvia cautiva la forma de visión y presencia de 
-        personas como tu o yo, lo que me interesa es contarte algo con lo poco que 
-        puedes notar desde el inicio en todo lo que se ha construido modelo por modelo, 
-        a caso ignoraste el hecho de que mi sitio web es demasiado simplista?, no lo 
-        notaste?, que mal, lastimosamente tiene un sentido, ademas de que soy un flojo 
-        para colocarle una imagen de fondo, realmente es por el hecho de que, no es 
-        necesario tener algo llamativo, para hacerle entender a la gente que incluso la 
-        mente más creativa, le gusta más el hecho de ser minimalista.
-      </p>
-    </div>
+      <section id="blog" class="seccion" aria-hidden="true">
+        <h1>El arte de un sitio como este</h1>
+        <p>Minimalismo, sonido, color y forma. Textos y reflexiones.</p>
 
-    <script src="java-section/formato-1.js"></script>
-    
+        <!-- Slider, si quieres lo activamos después -->
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>© MOP studios - estilo retro lo‑fi</small>
+    </footer>
+
+    <script src="java-section/formato-1.js" defer></script>
   </body>
 </html>
