@@ -1,38 +1,79 @@
+:root{
+  --bg: #0f1418;           /* oscuro, no negro */
+  --panel: #0e1519;
+  --text: #dbe7ee;
+  --accent: #ffb86b;
+  --muted: #9aa4ad;
+  --border-subtle: rgba(255,255,255,0.05);
+  --glass: rgba(255,255,255,0.02);
+  --mono: 'Courier New', Courier, monospace;
+}
+
+/* Reseteos básicos */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg,var(--bg), #071014);
+  color:var(--text);
+  padding:20px;
+}
+
+/* Secciones */
 .seccion {
   display: none;
-  padding: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  padding: 18px;
+  font-family: var(--mono);
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  border-radius:10px;
+  border: 0.5px solid var(--border-subtle); /* borde apenas perceptible */
 }
 
 .seccion.activo {
   display: block;
 }
 
+/* Nav buttons (mejor contraste retro) */
 nav button {
-  background-color: #333;
-  color: #0f0;
-  border: 1px solid #0f0;
-  padding: 20px;
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--border-subtle);
+  padding: 10px 14px;
   cursor: pointer;
   font-family: inherit;
+  border-radius:8px;
+  transition: background .15s ease, transform .08s ease;
+}
+nav button:hover{
+  background:var(--glass);
+  transform: translateY(-1px);
 }
 
+/* Caja de código (corrección overflow) */
 .caja-codigo {
-  background-color: #111;
-  border: 1px solid #444;
-  padding: 20px;
-  color: #0f0;
+  background-color: #071214;
+  border: 0.5px solid rgba(255,255,255,0.04);
+  padding: 14px;
+  color: #9ff59f; /* verde retro tenue */
   border-radius: 6px;
-  overflow-x: flex;
+  overflow-x: auto;
+  white-space: pre;
+  font-family: var(--mono);
+  font-size: 0.95rem;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #000;
-  color: #fff;
-  padding: 20px;
-}
-
+/* Encabezados */
 h1 {
-  color: #fff;
+  color: var(--text);
+  margin: 0 0 8px 0;
+}
+
+/* Links y pequeños ajustes */
+a { color: var(--accent); text-decoration:none }
+a:hover{ text-decoration:underline }
+
+/* Accesibilidad y motion */
+@media (prefers-reduced-motion: reduce){
+  *{ transition:none !important }
 }
