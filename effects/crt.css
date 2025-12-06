@@ -1,15 +1,14 @@
 :root{
-  --bg: #0c0c0e;           /* gris casi-negro (no azulado) */
+  --bg: #0c0c0e;
   --panel: #111215;
   --text: #d9e6ee;
   --muted: #9aa4ad;
-  --accent: #b388ff;      /* acento morado suave (guiño tipo Evangelion, discreto) */
+  --accent: #b388ff;
   --border-subtle: rgba(255,255,255,0.04);
   --glass: rgba(255,255,255,0.02);
   --mono: 'Courier New', Courier, monospace;
 }
 
-/* Reseteos básicos */
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -20,21 +19,19 @@ body{
   padding:20px;
 }
 
-/* Secciones */
 .seccion {
   display: none;
   padding: 18px;
   font-family: var(--mono);
   background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
   border-radius:10px;
-  border: 0.5px solid var(--border-subtle); /* borde apenas perceptible */
+  border: 0.5px solid var(--border-subtle);
 }
 
 .seccion.activo {
   display: block;
 }
 
-/* Nav buttons */
 nav button {
   background-color: transparent;
   color: var(--accent);
@@ -50,7 +47,6 @@ nav button:hover{
   transform: translateY(-1px);
 }
 
-/* Botón itch / Everlight */
 .btn-itch{
   display:inline-block;
   background: linear-gradient(180deg,var(--accent), #9a6ef0);
@@ -62,7 +58,6 @@ nav button:hover{
   box-shadow: 0 6px 14px rgba(0,0,0,0.35);
 }
 
-/* Caja de código */
 .caja-codigo {
   background-color: #071214;
   border: 0.5px solid rgba(255,255,255,0.03);
@@ -75,17 +70,14 @@ nav button:hover{
   font-size: 0.95rem;
 }
 
-/* Encabezados */
 h1 {
   color: var(--text);
   margin: 0 0 8px 0;
 }
 
-/* Links */
 a { color: var(--accent); text-decoration:none }
 a:hover{ text-decoration:underline }
 
-/* Motion reduce */
 @media (prefers-reduced-motion: reduce){
   *{ transition:none !important }
 }
