@@ -1,10 +1,10 @@
 :root{
-  --bg: #0f1418;           /* oscuro, no negro */
-  --panel: #0e1519;
-  --text: #dbe7ee;
-  --accent: #ffb86b;
+  --bg: #0c0c0e;           /* gris casi-negro (no azulado) */
+  --panel: #111215;
+  --text: #d9e6ee;
   --muted: #9aa4ad;
-  --border-subtle: rgba(255,255,255,0.05);
+  --accent: #b388ff;      /* acento morado suave (guiño tipo Evangelion, discreto) */
+  --border-subtle: rgba(255,255,255,0.04);
   --glass: rgba(255,255,255,0.02);
   --mono: 'Courier New', Courier, monospace;
 }
@@ -14,8 +14,8 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg,var(--bg), #071014);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg), #070708);
   color:var(--text);
   padding:20px;
 }
@@ -34,7 +34,7 @@ body{
   display: block;
 }
 
-/* Nav buttons (mejor contraste retro) */
+/* Nav buttons */
 nav button {
   background-color: transparent;
   color: var(--accent);
@@ -43,19 +43,31 @@ nav button {
   cursor: pointer;
   font-family: inherit;
   border-radius:8px;
-  transition: background .15s ease, transform .08s ease;
+  transition: background .12s ease, transform .06s ease;
 }
 nav button:hover{
   background:var(--glass);
   transform: translateY(-1px);
 }
 
-/* Caja de código (corrección overflow) */
+/* Botón itch / Everlight */
+.btn-itch{
+  display:inline-block;
+  background: linear-gradient(180deg,var(--accent), #9a6ef0);
+  color:#071018;
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+/* Caja de código */
 .caja-codigo {
   background-color: #071214;
-  border: 0.5px solid rgba(255,255,255,0.04);
+  border: 0.5px solid rgba(255,255,255,0.03);
   padding: 14px;
-  color: #9ff59f; /* verde retro tenue */
+  color: #9ff59f;
   border-radius: 6px;
   overflow-x: auto;
   white-space: pre;
@@ -69,11 +81,11 @@ h1 {
   margin: 0 0 8px 0;
 }
 
-/* Links y pequeños ajustes */
+/* Links */
 a { color: var(--accent); text-decoration:none }
 a:hover{ text-decoration:underline }
 
-/* Accesibilidad y motion */
+/* Motion reduce */
 @media (prefers-reduced-motion: reduce){
   *{ transition:none !important }
 }
