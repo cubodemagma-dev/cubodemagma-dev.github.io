@@ -32,19 +32,21 @@ body{
   display: block;
 }
 
-nav button {
-  background-color: transparent;
+nav .nav-btn {
+  background-color: #ffffff;
   color: var(--accent);
   border: 1px solid var(--border-subtle);
   padding: 10px 14px;
   cursor: pointer;
   font-family: inherit;
   border-radius:8px;
-  transition: background .12s ease, transform .06s ease;
+  transition: background .12s ease, transform .06s ease, box-shadow .12s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
-nav button:hover{
-  background:var(--glass);
+nav .nav-btn:hover{
+  background: linear-gradient(180deg, #ffffff, #f6f6f6);
   transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.16);
 }
 
 .btn-itch{
@@ -77,6 +79,23 @@ h1 {
 
 a { color: var(--accent); text-decoration:none }
 a:hover{ text-decoration:underline }
+
+.lightner-preview {
+  margin-top: 12px;
+  display: block;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  padding: 10px;
+  border-radius: 8px;
+  border: 0.5px solid var(--border-subtle);
+  max-width: 720px;
+}
+.lightner-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
 
 @media (prefers-reduced-motion: reduce){
   *{ transition:none !important }
