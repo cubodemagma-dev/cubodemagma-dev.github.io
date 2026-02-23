@@ -1,99 +1,38 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>MOP studios developer</title>
-    <link rel="stylesheet" href="effects/crt.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="brand">MOP studios</div>
-      <nav class="main-nav" role="navigation" aria-label="Principal">
-        <button class="nav-btn" data-target="inicio">Inicio</button>
-        <button class="nav-btn" data-target="juegos">Dev Games</button>
-        <button class="nav-btn" data-target="blog">Blog</button>
-        <button class="nav-btn" data-target="Everlight">Everlight</button>
-      </nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AeloBOX Studio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: #fff; padding: 10px; text-align: center; }
+        section { padding: 20px; border-bottom: 2px solid #ddd; }
+        footer { text-align: center; padding: 10px; background: #333; color: #fff; }
+        .content-block { margin: 20px 0; padding: 10px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AeloBOX Studio</h1>
     </header>
-
-    <main>
-      <section id="inicio" class="seccion activo" aria-hidden="false">
-        <h1>Fiestas decembrinas, bienvenido/a</h1>
-        <p>
-          A pesar de estar mucho tiempo atrapado en las acciones que se terminaban a la mitad, 
-          hoy, en diciembre les vengo a desear un buen fin de año, a todos aquellos que estuvieron 
-          aquí para ver cada proyecto que intentaba acabar o que tenía en mente, 
-          si, lo sé, parece un mensaje triste, pero no lo es, gracias a su emoción por finalmente 
-          ver algo nuevo para plataformas como Android, hoy me es de agrado decirles que la navidad 
-          puede traer nuevos puntos de vista, pero no los diré, o de lo contrario se pierde la mágia, 
-          así que disfruten de este año hasta el año nuevo, les ha hablado su desarrollador 
-          de videojuegos unico y extraño, CuboDeMagma_OFF, felices fiestas y feliz navidad...
-        </p>
-      </section>
-
-      <Everlight id="Everlight" class="seccion" aria-hidden="true">
-        <h1>Everlight</h1>
-        <p class="everlight-text">
-          Everlight, un mundo, no, una computadora ficticia que en algún libro 
-          ha sido redactado como la base de una isla ficticia ubicada en medio 
-          de los puntos de el océano más lejano, pero quí vamos a cambiar un par 
-          de cosas...
-        </p>
-        <p>
-          <a id="everlight-visit" class="btn-itch" href="https://cubodemagma-off.itch.io" target="_blank" rel="noopener">Visitar Everlight</a>
-        </p>
-      </Everlight>
-
-      <section id="juegos" class="seccion" aria-hidden="true">
-        <h1>Hueles eso? Es el café a altas horas de la noche.</h1>
-        <p>
-          Sabes, estar frente a una laptop, como un desarrolador que 
-          ha metido mucho de su tiempo a desarrollar muchas cosas, 
-          a desarrollar algo increíble, he destacado que la edición 
-          de todo lo que puedes hacer es casi mágico, piensalo, el rol 
-          del programador de videojuegos o de cualquier otra area es 
-          crear algo nuevo que solucione un problema o que simplemente 
-          experimente, solo que si, por obvias razones, depende mucho de 
-          que es lo que haga con esa experimentación, no lo crees?...
-        </p>
-
-        <pre class="caja-codigo"><code>
-Using app;
-
-var ventana_nombre.string = "Ventana nueva"
-
-func main(new_window.["color": black, "size": 200x400, "label": "", "title": ventana_nombre]):
->> new_window.create()
->> >> "label".print("Hola mundo desde un lenguaje de programación ficticio.")
->> >> button.create("Salir")
-
-func end():
->> if button.click:
->> >> main.quit()
-</code></pre>
-      </section>
-
-      <section id="blog" class="seccion" aria-hidden="true">
-        <h1>El arte de un sitio como este</h1>
-        <p>
-          Sabes, el arte es arte cuando la gente llega a confundirse con 
-          la forma en la cual se explica la situación narrada o se entiende 
-          suele mantenerse abstracta, una historia lineal te dá intensidad, 
-          un videojuego te dá emoción e insertidumbre, pero depende de ti, entender 
-          el arte a tu manera.
-          Sabes, yo pienso que si en algún momento llegas a ver algo creado por mi 
-          con una visión distinta, habré logrado lo que muchos artistas quieren 
-          lograr, en mi caso, es el hecho de que entiendas más de lo que se muestra, 
-          y mi objetivo siempre será ese para ustedes, antes de volverme loco...
-        </p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <small>© MOP studios</small>
+    <section>
+        <div class="content-block">
+            <h2>About Us</h2>
+            <p>We are a creative studio committed to delivering high-quality projects with a unique touch.</p>
+        </div>
+        <div class="content-block">
+            <h2>Our Services</h2>
+            <p>Explore the various services we offer that cater to your needs.</p>
+        </div>
+        <div class="content-block">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for any inquiries or collaborations!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 AeloBOX Studio. All rights reserved.</p>
     </footer>
-
-    <script src="java-section/formato-1.js" defer></script>
-  </body>
+</body>
 </html>
