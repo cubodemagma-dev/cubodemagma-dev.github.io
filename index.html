@@ -1,34 +1,51 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AeloBOX</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 10px; text-align: center; }
-        section { padding: 20px; border-bottom: 2px solid #ddd; }
-        footer { text-align: center; padding: 10px; background: #333; color: #fff; }
-        .content-block { margin: 20px 0; padding: 10px; border: 1px solid #ddd; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>AeloBOX Studio</h1>
+        <h1>AeloBOX</h1>
+        <p>Desarrollando desde 2025...</p>
     </header>
-    <section>
-        <div class="content-block">
-            <h2>Acerca del estudio.</h2>
-            <p>Estudio de videojuegos a comienzos del año 2025 creado para la comunidad.</p>
-        </div>
-        <div class="content-block">
-            <h2>Apartado</h2>
-            <p>Un estudio ue ha sido creado por un alma artistica extraña, no lo crees?</p>
-        </div>
-    </section>
+
+    <nav>
+        <ul>
+            <li><a href="#about">DEL ESTUDIO</a></li>
+            <li><a href="#projects">PROYECTOS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>DEL ESTUDIO</h2>
+            <p>Mantenemos la idea de crear proyectos utiles o entretenidos para todos desde cualquier dispositivo.</p>
+        </section>
+
+        <section id="projects">
+            <h2>PROYECTOS</h2>
+            <div class="project-box" id="project1">
+                <h3>Proyecto 1</h3>
+                <div class="image-container" id="image1"></div>
+            </div>
+            <div class="project-box" id="project2">
+                <h3>Proyecto 2</h3>
+                <div class="image-container" id="image2"></div>
+            </div>
+            <div class="project-box" id="project3">
+                <h3>Proyecto 3</h3>
+                <div class="image-container" id="image3"></div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2026 AeloBOX Studio. All rights reserved.</p>
+        <p>&copy; 2026 CUBODEMAGMA. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
