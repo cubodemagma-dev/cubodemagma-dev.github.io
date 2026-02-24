@@ -1,4 +1,5 @@
 function loadLogo() {
+    const nextRelease = "2026-03-15";
     const logoContainer = document.getElementById('logoContainer');
     const img = document.createElement('img');
     img.src = './imagenes/GRAF01.png';
